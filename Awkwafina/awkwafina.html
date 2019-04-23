@@ -4,9 +4,13 @@
 	<title> Awkwafina </title>
 	
 	<style>
-		#background {
-			border: solid 1px black;
-			height: 100vh;
+		video {
+	  		position: fixed;
+	  		right: 0;
+	  		bottom: 0;
+	  		min-width: 100%; 
+	  		min-height: 100%;
+	  		z-index: -1;
 		}
 
 		#title {
@@ -14,7 +18,6 @@
 		}
 
 		.icon {
-			border: solid 1px black;
 			margin-top: 50px;
 			margin-left: 94px;
 			width: 25%;
@@ -25,38 +28,56 @@
 		p {
 			text-align: center;
 		}
+
+		#sunglasses {
+			fill: #8E1A1A;
+			font-family: 'MyriadPro-Regular';	
+			font-size: 6px;
+			transform-style: preserve-3d;
+		}
+
+		#sunglasses:hover {
+			transform: rotateY(180deg);
+			transition-duration: 5s;
+		}
 	</style>
 
 </head>
 <body>
-	<div id="background">
-		<p> Background </p>
+	<video autoplay="" loop="" muted="" src="awk_video.mp4">
+       	Your browser does not support embedded video.
+    </video>
 
-		<div id="title">
-			<p> Title </p>
-		</div>
+     <audio autoplay>
+     	<source src="myvag.ogg" type="audio/ogg">
+    	<source src="myvag.mp3" type="audio/mpeg">
+    	Your browser does not support the audio element.
+    </audio>
 
-		<div id="icons">
-			<div class="icon">
-				<p> Icon 1 </p>
-			</div>
-			<div class="icon">
-				<p> Icon 2 </p>
-			</div>
-			<div class="icon">
-				<p> Icon 3 </p>
-			</div>
-			<div class="icon">
-				<p> Icon 4 </p>
-			</div>
-			<div class="icon">
-				<p> Icon 5 </p>
-			</div>
-			<div class="icon">
-				<p> Icon 6 </p>
-			</div>
-		</div>		
-
+	<div id="title">
+		<p> Awkwafina </p>
 	</div>
+
+	<div id="icons">
+		<svg class="icon" id="sunglasses">
+			<use xlink:href="awkwafina.svg#sunglasses"></use>
+		</svg>
+
+		<div class="icon">
+			<p> Icon 2 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 3 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 4 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 5 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 6 </p>
+		</div>
+	</div>		
 </body>
 </html>
