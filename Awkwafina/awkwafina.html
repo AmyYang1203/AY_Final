@@ -19,36 +19,45 @@
 
 		.icon {
 			margin-top: 50px;
-			margin-left: 94px;
+			margin-left: 30px;
 			width: 25%;
 			height: 25vh;
 			float: left;
 		}
 
 		p {
-			text-align: center;
+			/*text-align: center;*/
+			position: absolute;
+			left: 40px;
+			top: 50px;
+			z-index: -1;
 		}
 
 
 		/*Sunglasses*/
-		#sunglasses {
-			fill: #8E1A1A;
-			font-family: 'MyriadPro-Regular';	
-			font-size: 6px;
-			transform-style: preserve-3d;
+		.st0 {
+			fill:#D6BDA5;
+		}
+		.st1{ 
+			opacity:0.97;fill:#8E1A1A;enable-background:new;
 		}
 
 		#sunglasses:hover {
-			transform: rotateY(180deg);
-			transition-duration: 5s;
+			animation: disappear 3s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes disappear {
+			0% {opacity: 1;}
+			100% {opacity: 0;}
 		}
 	</style>
 
 </head>
 <body>
-	<video autoplay="" loop="" muted="" src="awk_video.mp4">
+	<!--<video autoplay="" loop="" muted="" src="awk_video.mp4">
        	Your browser does not support embedded video.
-    </video>
+    </video>-->
 
      <audio autoplay>
      	<source src="myvag.ogg" type="audio/ogg">
@@ -56,16 +65,20 @@
     	Your browser does not support the audio element.
     </audio>
 
-	<div id="title">
+	<!--<div id="title">
 		<p> Awkwafina </p>
-	</div>
+	</div>-->
 
 	<div id="icons">
-		<svg class="icon" id="sunglasses">
-			<use xlink:href="awkwafina.svg#sunglasses"></use>
-		</svg>
 
-		<div class="icon">
+		<div class="icon" id="awkSunglasses">
+			<svg id="sunglasses" width="375px" height="375px">
+				<use xlink:href="awkwafina.svg#sunglasses"></use>
+			</svg>
+			<p> Awkwafina began rapping </p>
+		</div>
+
+		<!--<div class="icon">
 			<p> Icon 2 </p>
 		</div>
 		<div class="icon">
@@ -79,7 +92,7 @@
 		</div>
 		<div class="icon">
 			<p> Icon 6 </p>
-		</div>
+		</div>-->
 	</div>		
 </body>
 </html>
