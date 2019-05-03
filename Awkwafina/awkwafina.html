@@ -10,7 +10,7 @@
 	  		bottom: 0;
 	  		min-width: 100%; 
 	  		min-height: 100%;
-	  		z-index: -1;
+	  		z-index: -2;
 		}
 
 		#title {
@@ -19,30 +19,61 @@
 
 		.icon {
 			margin-top: 50px;
-			margin-left: 30px;
-			width: 25%;
+			margin-left: 50px;
+			width: 30%;
 			height: 25vh;
 			float: left;
 		}
 
-		p {
-			/*text-align: center;*/
+		#p1 {
 			position: absolute;
-			left: 40px;
-			top: 50px;
+			left: 145px;
+			top: 140px;
 			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p2 {
+			position: absolute;
+			left: 740px;
+			top: 200px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
 		}
 
 
 		/*Sunglasses*/
-		.st0 {
-			fill:#D6BDA5;
+		.vag1 {
+			fill: #D6BDA5;
 		}
-		.st1{ 
-			opacity:0.97;fill:#8E1A1A;enable-background:new;
+		.vag2 { 
+			opacity: 0.97;
+			fill:#8E1A1A;
+			enable-background:new;
 		}
 
 		#sunglasses:hover {
+			animation: disappear 3s;
+			animation-fill-mode: forwards;
+		}
+
+		/*New York*/
+		.newyork1 {
+			fill:#156B8C;
+		}
+		.newyork2 {
+			fill:#0CC4EF;
+		}
+		.newyork3 {
+			fill:#FFA700;
+		}
+		.newyork4 {
+			fill:#2B9FB2;
+		}
+
+		#newyork:hover {
 			animation: disappear 3s;
 			animation-fill-mode: forwards;
 		}
@@ -71,16 +102,24 @@
 
 	<div id="icons">
 
-		<div class="icon" id="awkSunglasses">
+		<div class="icon">
 			<svg id="sunglasses" width="375px" height="375px">
 				<use xlink:href="awkwafina.svg#sunglasses"></use>
 			</svg>
-			<p> Awkwafina began rapping </p>
+			<p id="p1"> Awkwafina began <br> rapping at age 13. <br> 
+				In 2012, she gained <br> popularity
+				for her song <br> "My Vag", which has
+				<br> over 4 million views <br> on YouTube.
+			</p>
 		</div>
 
-		<!--<div class="icon">
-			<p> Icon 2 </p>
+		<div class="icon">
+			<svg id="newyork" width="375px" height="375px">
+				<use xlink:href="awkwafina.svg#newyork"></use>
+			</svg>
+			<p id="p2"> Icon 2 </p>
 		</div>
+
 		<div class="icon">
 			<p> Icon 3 </p>
 		</div>
@@ -92,7 +131,7 @@
 		</div>
 		<div class="icon">
 			<p> Icon 6 </p>
-		</div>-->
+		</div>
 	</div>		
 </body>
 </html>
