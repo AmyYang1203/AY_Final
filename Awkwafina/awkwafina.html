@@ -13,12 +13,21 @@
 	  		z-index: -2;
 		}
 
+		/*title*/
+
 		#title {
-			border: solid 1px black;
+			width: 100vw;
+			height: 200px;
 		}
 
+		#awktitle {
+			width: 100vw;
+		}
+
+		.awktitle{fill:#FFB0CD;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+
 		.icon {
-			margin-top: 50px;
+			margin-top: 30px;
 			margin-left: 50px;
 			width: 30%;
 			height: 25vh;
@@ -52,6 +61,14 @@
 			font-size: 20px;
 		}
 
+		#p4 {
+			position: absolute;
+			left: 900px;
+			top: 200px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
 
 		/*Sunglasses*/
 		.vag1 {fill: #D6BDA5;}
@@ -67,14 +84,25 @@
 		.singapore1 {fill:#D8D8D6;}
 		.singapore2 {fill:#D3D3D1;}
 		.singapore3 {fill:#EBEBEB;}
-		.singapore4 {display:none;fill:#C9C9C7;}
+		.singapore4 {display:none; fill:#C9C9C7;}
 		.singapore5 {fill:#C9C9C7;}
 		.singapore6 {fill:#6CBAE5;}
 		.singapore7 {fill:#4799CF;}
 		.singapore8 {fill:#E0E0E0;}
 		.singapore9 {fill:#EAEAE8;}
 
-		#singapore:hover, #newyork:hover, #sunglasses:hover {
+		/*SNL*/
+
+		.SNL1 {fill:#2AAEFF;}
+		.SNL2 {fill:#0009AA;}
+		.SNL3 {fill:#694949;}
+		.SNL4 {fill:#FBB03B;}
+
+		#SNL {
+			margin-top: 110px;
+		}
+
+		#SNL:hover, #singapore:hover, #newyork:hover, #sunglasses:hover {
 			animation: disappear 3s;
 			animation-fill-mode: forwards;
 		}
@@ -98,13 +126,15 @@
     </audio>
 
 	<div id="title">
-		<p> Awkwafina </p>
+		<svg id="awktitle" width="375px" height="375px">
+			<use xlink:href="awkwafina.svg#awktitle"></use>
+		</svg>
 	</div>
 
 	<div id="icons">
 
 		<div class="icon">
-			<svg id="sunglasses" width="375px" height="375px">
+			<svg id="sunglasses" width="350px" height="350px">
 				<use xlink:href="awkwafina.svg#sunglasses"></use>
 			</svg>
 			<p id="p1"> Awkwafina began <br> rapping at age 13. <br> 
@@ -115,20 +145,24 @@
 		</div>
 
 		<div class="icon">
-			<svg id="newyork" width="375px" height="375px">
+			<svg id="newyork" width="350px" height="350px">
 				<use xlink:href="awkwafina.svg#newyork"></use>
 			</svg>
 			<p id="p2"> Icon 2 </p>
 		</div>
 
 		<div class="icon">
-			<svg id="singapore" width="375px" height="375px">
+			<svg id="singapore" width="350px" height="350px">
 				<use xlink:href="awkwafina.svg#singapore"></use>
 			</svg>
 			<p id="p3"> Icon 3 </p>
 		</div>
+
 		<div class="icon">
-			<p> Icon 4 </p>
+			<svg id="SNL" width="400px" height="400px">
+				<use xlink:href="awkwafina.svg#SNL"></use>
+			</svg>
+			<p id="p4"> Icon 4 </p>
 		</div>
 		<div class="icon">
 			<p> Icon 5 </p>
