@@ -28,7 +28,7 @@
 		#p1 {
 			position: absolute;
 			left: 145px;
-			top: 140px;
+			top: 190px;
 			z-index: -1;
 			font-family: gotham;
 			font-size: 20px;
@@ -37,6 +37,15 @@
 		#p2 {
 			position: absolute;
 			left: 740px;
+			top: 260px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p3 {
+			position: absolute;
+			left: 900px;
 			top: 200px;
 			z-index: -1;
 			font-family: gotham;
@@ -45,35 +54,27 @@
 
 
 		/*Sunglasses*/
-		.vag1 {
-			fill: #D6BDA5;
-		}
-		.vag2 { 
-			opacity: 0.97;
-			fill:#8E1A1A;
-			enable-background:new;
-		}
-
-		#sunglasses:hover {
-			animation: disappear 3s;
-			animation-fill-mode: forwards;
-		}
+		.vag1 {fill: #D6BDA5;}
+		.vag2 {opacity: 0.97; fill:#8E1A1A; enable-background:new;}
 
 		/*New York*/
-		.newyork1 {
-			fill:#156B8C;
-		}
-		.newyork2 {
-			fill:#0CC4EF;
-		}
-		.newyork3 {
-			fill:#FFA700;
-		}
-		.newyork4 {
-			fill:#2B9FB2;
-		}
+		.newyork1 {fill:#156B8C;}
+		.newyork2 {fill:#0CC4EF;}
+		.newyork3 {fill:#FFA700;}
+		.newyork4 {fill:#2B9FB2;}
 
-		#newyork:hover {
+		/*Singapore*/
+		.singapore1 {fill:#D8D8D6;}
+		.singapore2 {fill:#D3D3D1;}
+		.singapore3 {fill:#EBEBEB;}
+		.singapore4 {display:none;fill:#C9C9C7;}
+		.singapore5 {fill:#C9C9C7;}
+		.singapore6 {fill:#6CBAE5;}
+		.singapore7 {fill:#4799CF;}
+		.singapore8 {fill:#E0E0E0;}
+		.singapore9 {fill:#EAEAE8;}
+
+		#singapore:hover, #newyork:hover, #sunglasses:hover {
 			animation: disappear 3s;
 			animation-fill-mode: forwards;
 		}
@@ -96,9 +97,9 @@
     	Your browser does not support the audio element.
     </audio>
 
-	<!--<div id="title">
+	<div id="title">
 		<p> Awkwafina </p>
-	</div>-->
+	</div>
 
 	<div id="icons">
 
@@ -121,7 +122,10 @@
 		</div>
 
 		<div class="icon">
-			<p> Icon 3 </p>
+			<svg id="singapore" width="375px" height="375px">
+				<use xlink:href="awkwafina.svg#singapore"></use>
+			</svg>
+			<p id="p3"> Icon 3 </p>
 		</div>
 		<div class="icon">
 			<p> Icon 4 </p>
