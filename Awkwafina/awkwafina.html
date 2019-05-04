@@ -28,8 +28,8 @@
 
 		.icon {
 			margin-top: 30px;
-			margin-left: 50px;
-			width: 30%;
+			margin-left: 100px;
+			width: 25%;
 			height: 25vh;
 			float: left;
 		}
@@ -70,6 +70,24 @@
 			font-size: 20px;
 		}
 
+		#p5 {
+			position: absolute;
+			left: 900px;
+			top: 200px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p6 {
+			position: absolute;
+			left: 900px;
+			top: 200px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
 		/*Sunglasses*/
 		.vag1 {fill: #D6BDA5;}
 		.vag2 {opacity: 0.97; fill:#8E1A1A; enable-background:new;}
@@ -98,11 +116,39 @@
 		.SNL3 {fill:#694949;}
 		.SNL4 {fill:#FBB03B;}
 
+		/*Dumbfoundead*/
+
+		.dumbfoundead1 {fill:#FF0000;}
+		.dumbfoundead2 {fill:#0569E2;}
+		.dumbfoundead3 {fill:#E8D99A;}
+
 		#SNL {
 			margin-top: 110px;
 		}
 
-		#SNL:hover, #singapore:hover, #newyork:hover, #sunglasses:hover {
+		#dumbfoundead {
+			margin-top: 150px;
+			margin-left: 50px;
+		}
+
+
+		/*sandwich*/
+		.sandwich1 {fill:#EEAF4B;}
+		.sandwich2 {fill:#7A3726;}
+		.sandwich3 {fill:#C56458;}
+		.sandwich4 {fill:#FBD490;}
+		.sandwich5 {fill:#88C057;}
+		.sandwich6 {fill:#BC1B09;}
+		.sandwich7 {fill:#F35F4F;}
+		.sandwich8 {fill:#FF3000;}
+		.sandwich9 {fill:#FF2800;}
+
+		#sandwich {
+			margin-top: 150px;
+			margin-left: 20px;
+		}
+
+		#sandwich:hover, #dumbfoundead:hover, #SNL:hover, #singapore:hover, #newyork:hover, #sunglasses:hover {
 			animation: disappear 3s;
 			animation-fill-mode: forwards;
 		}
@@ -115,9 +161,9 @@
 
 </head>
 <body>
-	<!--<video autoplay="" loop="" muted="" src="awk_video.mp4">
+	<video autoplay="" loop="" muted="" src="awk_video.mp4">
        	Your browser does not support embedded video.
-    </video>-->
+    </video>
 
      <audio autoplay>
      	<source src="myvag.ogg" type="audio/ogg">
@@ -164,11 +210,19 @@
 			</svg>
 			<p id="p4"> Icon 4 </p>
 		</div>
+
 		<div class="icon">
-			<p> Icon 5 </p>
+			<svg id="dumbfoundead" width="300px" height="300px">
+				<use xlink:href="awkwafina.svg#dumbfoundead"></use>
+			</svg>
+			<p id="p5"> Icon 5 </p>
 		</div>
+
 		<div class="icon">
-			<p> Icon 6 </p>
+			<svg id="sandwich" width="350px" height="350px">
+				<use xlink:href="awkwafina.svg#sandwich"></use>
+			</svg>
+			<p id="p6"> Icon 6 </p>
 		</div>
 	</div>		
 </body>
