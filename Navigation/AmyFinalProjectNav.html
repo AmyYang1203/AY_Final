@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Final Project Nav </title>
+	<style>
+
+		body {
+			background-color: #fecbdc;
+		}
+
+		#CL {
+			position: absolute;
+			z-index: 1;
+			margin-left: 100px;
+			margin-top: -10px;
+		}
+
+		#mountain {
+			position: absolute;
+			z-index: 2;
+			margin-left: 733px;
+			margin-top: -10px;
+		}
+	</style>
+</head>
+<body>
+	<img id="awk" src="AmyAwkwafinaEdit.png">
+	<img id="CL" src="AmyCLEdit.png">
+	<img id="mountain" src="AmyMountainEdit.png"> 
+
+	<script>
+		document.getElementById("awk").addEventListener("mouseover", mouseOverAwk);
+		document.getElementById("CL").addEventListener("mouseover", mouseOverCL);
+		document.getElementById("mountain").addEventListener("mouseover", mouseOverMountain);
+
+		document.getElementById("awk").addEventListener("mouseout", mouseOutAwk);
+		document.getElementById("CL").addEventListener("mouseout", mouseOutCL);
+		document.getElementById("mountain").addEventListener("mouseout", mouseOutMountain);
+
+		function mouseOverAwk() {
+			document.getElementById("awk").style.opacity="0.5";
+		}
+		function mouseOverCL() {
+			document.getElementById("CL").style.opacity="0.5";
+		}
+		function mouseOverMountain() {
+			document.getElementById("mountain").style.opacity="0.5";
+		}
+
+		function mouseOutAwk() {
+			document.getElementById("awk").style.opacity="1";
+		}
+		function mouseOutCL() {
+			document.getElementById("CL").style.opacity="1";
+		}
+		function mouseOutMountain() {
+			document.getElementById("mountain").style.opacity="1";
+		}
+	</script>
+</body>
+
+</html>
