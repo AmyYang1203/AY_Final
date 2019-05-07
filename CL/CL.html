@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CL </title>
+	
+	<style>
+		video {
+	  		position: fixed;
+	  		right: 0;
+	  		bottom: 0;
+	  		min-width: 100%; 
+	  		min-height: 100%;
+	  		z-index: -2;
+		}
+
+		/*title*/
+
+		#title {
+			width: 100vw;
+			height: 200px;
+			margin-top: -90px;
+		}
+
+		#CLtitle {
+			width: 100vw;
+		}
+
+		.CLtitle1{stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+		.CLtitle2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+
+		.icon {
+			margin-top: 30px;
+			margin-left: 100px;
+			width: 25%;
+			height: 25vh;
+			float: left;
+		}
+
+		#p1 {
+			position: absolute;
+			left: 180px;
+			top: 325px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p2 {
+			position: absolute;
+			left: 730px;
+			top: 425px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p3 {
+			position: absolute;
+			left: 1190px;
+			top: 315px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p4 {
+			position: absolute;
+			left: 170px;
+			top: 690px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p5 {
+			position: absolute;
+			left: 690px;
+			top: 665px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p5_1 {
+			position: absolute;
+			left: 730px;
+			top: 730px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		#p5_2 {
+			position: absolute;
+			left: 740px;
+			top: 770px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;	
+		}
+
+		#p6 {
+			position: absolute;
+			left: 1110px;
+			top: 745px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+		}
+
+		/*Sunglasses*/
+		.korea1{fill:#FFFFFF;}
+		.korea2{fill:#103B9B;}
+		.korea3{fill:#ED1F34;}
+
+		/*New York*/
+		.newyork1 {fill:#156B8C;}
+		.newyork2 {fill:#0CC4EF;}
+		.newyork3 {fill:#FFA700;}
+		.newyork4 {fill:#2B9FB2;}
+
+		/*Singapore*/
+		.singapore1 {fill:#D8D8D6;}
+		.singapore2 {fill:#D3D3D1;}
+		.singapore3 {fill:#EBEBEB;}
+		.singapore4 {display:none;fill:#C9C9C7;}
+		.singapore5 {fill:#C9C9C7;}
+		.singapore6 {fill:#6CBAE5;}
+		.singapore7 {fill:#4799CF;}
+		.singapore8 {fill:#E0E0E0;}
+		.singapore9 {fill:#EAEAE8;}
+		.singapore10 {fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+
+		/*SNL*/
+
+		.SNL1 {fill:#2AAEFF;}
+		.SNL2 {fill:#0009AA;}
+		.SNL3 {fill:#694949;}
+		.SNL4 {fill:#FBB03B;}
+
+		/*Dumbfoundead*/
+
+		.dumbfoundead1{fill:#FFFFFF;}
+		.dumbfoundead2{fill:#FF0000;}
+		.dumbfoundead3{fill:#0569E2;}
+		.dumbfoundead4{fill:#E8D99A;}
+
+		#SNL {
+			margin-top: 110px;
+		}
+
+		#dumbfoundead {
+			margin-top: 150px;
+			margin-left: 50px;
+		}
+
+
+		/*sandwich*/
+		.sandwich1 {fill:#EEAF4B;}
+		.sandwich2 {fill:#7A3726;}
+		.sandwich3 {fill:#C56458;}
+		.sandwich4 {fill:#FBD490;}
+		.sandwich5 {fill:#88C057;}
+		.sandwich6 {fill:#BC1B09;}
+		.sandwich7 {fill:#F35F4F;}
+		.sandwich8 {fill:#FF3000;}
+		.sandwich9 {fill:#FF2800;}
+
+		#sandwich {
+			margin-top: 140px;
+			margin-left: 20px;
+		}
+
+		#sandwich:hover, #dumbfoundead:hover, #SNL:hover, #singapore:hover, #newyork:hover, #sunglasses:hover {
+			animation: disappear 3s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes disappear {
+			0% {opacity: 1;}
+			100% {opacity: 0;}
+		}
+	</style>
+
+</head>
+<body>
+	<video autoplay="" loop="" muted="" src="CL.mp4">
+       	Your browser does not support embedded video.
+    </video>
+
+     <audio autoplay>
+     	<source src="CL.ogg" type="audio/ogg">
+    	<source src="CL.mp3" type="audio/mpeg">
+    	Your browser does not support the audio element.
+    </audio>
+
+	<div id="title">
+		<svg id="CLtitle" width="375px" height="375px">
+			<use xlink:href="CL.svg#CLtitle"></use>
+		</svg>
+	</div>
+
+	<div id="icons">
+
+		<div class="icon">
+			<svg id="korea" width="350px" height="350px">
+				<use xlink:href="CL.svg#korea"></use>
+			</svg>
+			<p id="p1"> 
+				Awkwafina began <br> rapping at age 13. <br> 
+				In 2012, she gained <br> popularity
+				for her song <br> "My Vag", which has
+				<br> over 4 million views <br> on YouTube.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="newyork" width="350px" height="350px">
+				<use xlink:href="CL.svg#newyork"></use>
+			</svg>
+			<p id="p2"> 
+				She was <br> born in <br> New York 
+				<br> City in <br> Forest Hills, <br> 
+				Queens.  
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="singapore" width="350px" height="350px">
+				<use xlink:href="CL.svg#singapore"></use>
+			</svg>
+			<p id="p3"> 
+				She played <br> Goh Peik <br> 
+				Lin in <br> Crazy Rich <br> 
+				Asians, a <br> college <br> friend
+				of <br> Rachel Chu. 
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="SNL" width="400px" height="400px">
+				<use xlink:href="CL.svg#SNL"></use>
+			</svg>
+			<p id="p4">
+				She hosted SNL with musical <br>
+				guest Travis Scott. She was <br>
+				the 2nd East Asian-American <br>
+				female celebrity to host after <br>
+				Lucy Liu.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="dumbfoundead" width="300px" height="300px">
+				<use xlink:href="CL.svg#dumbfoundead"></use>
+			</svg>
+			<p id="p5">
+				She is profiled <br> 
+				in the film Bad 
+				Rap, <br> which
+				features  
+			</p>
+
+			<p id="p5_1">
+				Asian - <br>
+				Americans <br>
+			</p>
+
+			<p id="p5_2">
+				rappers.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="sandwich" width="350px" height="350px">
+				<use xlink:href="CL.svg#sandwich"></use>
+			</svg>
+			<p id="p6">
+				She starred as Constance, a <br>
+				loud-mouthed street hustler <br>
+				and pickpocket in the movie <br>
+				Ocean's 8. 
+			</p>
+		</div>
+	</div>		
+</body>
+</html>
