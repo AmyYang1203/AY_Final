@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Mountain Brothers </title>
+	
+	<style>
+		video {
+	  		position: fixed;
+	  		right: 0;
+	  		bottom: 0;
+	  		min-width: 100%; 
+	  		min-height: 100%;
+	  		z-index: -2;
+		}
+
+		/*title*/
+
+		#title {
+			width: 100vw;
+			height: 200px;
+			margin-top: -90px;
+		}
+
+		#MBtitle {
+			width: 100vw;
+		}
+
+		.MBtitle1{stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+		.MBtitle2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+
+		.icon {
+			margin-top: 110px;
+			margin-left: 100px;
+			width: 25%;
+			height: 25vh;
+			float: left;
+		}
+
+		#p1 {
+			position: absolute;
+			left: 160px;
+			top: 315px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p2 {
+			position: absolute;
+			left: 670px;
+			top: 360px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p2_1 {
+			position: absolute;
+			left: 690px;
+			top: 400px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p2_2 {
+			position: absolute;
+			left: 730px;
+			top: 420px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p3 {
+			position: absolute;
+			left: 1190px;
+			top: 315px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p4 {
+			position: absolute;
+			left: 190px;
+			top: 710px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p5 {
+			position: absolute;
+			left: 670px;
+			top: 800px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		#p6 {
+			position: absolute;
+			left: 1110px;
+			top: 745px;
+			z-index: -1;
+			font-family: gotham;
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+
+		/*Korea*/
+		.korea1{fill:#FFFFFF;}
+		.korea2{fill:#103B9B;}
+		.korea3{fill:#ED1F34;}
+
+		/*2ne1*/
+		.eye1{fill:#DF9000;}
+		.eye2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+
+		#eye{
+			margin-top: -20px;
+		}
+
+		/*Dr.Pepper*/
+		.soda1{fill:#750E17;}
+		.soda2{fill:#432D1F;}
+		.soda3{fill:#600C13;}
+		.soda4{fill:#2C1D15;}
+		.soda5{fill:#DDF5FF;}
+		.soda6{fill:#C1E9F4;}
+
+		/*Hello Bitches*/
+
+		.hello1{fill:#111111;stroke:#FFFFFF;stroke-miterlimit:10;}
+
+		/*Cloud*/
+
+		.cloud1{fill:#F0F5F7;}
+		.cloud2{fill:#DDE9ED;}
+		.cloud3{fill:#C4E1E8;}
+		.cloud4{fill:#A4D5DD;}
+		.cloud5{fill:#A0ECFF;}
+		.cloud6{fill:#F6AEE3;}
+
+
+		#hello {
+			margin-top: 110px;
+		}
+
+		#cloud {
+			margin-top: 130px;
+			margin-left: 20px;
+		}
+
+
+		/*TIME*/
+		.time1{fill:#F4EFEF;}
+		.time2{fill:#FCFAF8;}
+		.time3{fill:#8E0A0A;}
+		.time4{fill:#C50100;}
+		.time5{font-family:'BookAntiqua';}
+		.time6{font-size:87px;}
+
+		#time {
+			margin-top: 140px;
+			margin-left: 20px;
+		}
+
+		#time:hover, #cloud:hover, #hello:hover, #soda:hover, #eye:hover, #korea:hover {
+			animation: disappear 3s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes disappear {
+			0% {opacity: 1;}
+			100% {opacity: 0;}
+		}
+	</style>
+
+</head>
+<body>
+	<video autoplay="" loop="" muted="" src="MB.mp4">
+       	Your browser does not support embedded video.
+    </video>
+
+     <audio autoplay>
+     	<source src="MB.ogg" type="audio/ogg">
+    	<source src="MB.mp3" type="audio/mpeg">
+    	Your browser does not support the audio element.
+    </audio>
+
+	<div id="title">
+		<svg id="MBtitle" width="375px" height="375px">
+			<use xlink:href="MB.svg#MBtitle"></use>
+		</svg>
+	</div>
+
+	<div id="icons">
+
+		<div class="icon">
+			<svg id="korea" width="350px" height="350px">
+				<use xlink:href="MB.svg#korea"></use>
+			</svg>
+			<p id="p1"> 
+				Lee Char-rin was <br> born in Seoul. <br> 
+				She spent most of <br> her childhood
+				though <br> in Paris, Tsukuba, <br>  
+				Japan and Tokyo.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="eye" width="400px" height="400px">
+				<use xlink:href="MB.svg#eye"></use>
+			</svg>
+			<p id="p2"> 
+				She auditioned for YG <br>
+				when she was 15. She <br>
+			</p>
+
+			<p id="p2_1">
+				became the leader and
+			</p>
+
+			<p id="p2_2">
+				main rapper of 2ne1.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="soda" width="350px" height="350px">
+				<use xlink:href="MB.svg#soda"></use>
+			</svg>
+			<p id="p3"> 
+				She was <br> featured <br> 
+				in Diplo's <br> Doctor <br> 
+				Pepper <br> along <br> with
+				Riff <br> Raff and <br> OG Maco. 
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="hello" width="400px" height="400px">
+				<use xlink:href="MB.svg#hello"></use>
+			</svg>
+			<p id="p4">
+				She released her first <br>
+				single "Hello Bitches" <br>
+				as a teaser for her <br>
+				English language debut <br>
+				album Lifted.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="cloud" width="400px" height="400px">
+				<use xlink:href="MB.svg#cloud"></use>
+			</svg>
+			<p id="p5">
+				Her lead single "Lifted" <br>
+				appeared in the Top 30 of <br>
+				iTunes' Hip-Hop/Rap chart <br>
+				within 3 hours of being <br>
+				released.
+			</p>
+		</div>
+
+		<div class="icon">
+			<svg id="time" width="350px" height="350px">
+				<use xlink:href="MB.svg#time"></use>
+			</svg>
+			<p id="p6">
+				Time noted her as the <br>
+				"future of Kpop in America" <br>
+				On October 29, 2016, CL <br>
+				kicked off her first North <br>
+				American tour. 
+			</p>
+		</div>
+	</div>		
+</body>
+</html>
