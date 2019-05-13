@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Awkwafina </title>
+	
+	<style>
+		video {
+	  		position: fixed;
+	  		right: 0;
+	  		bottom: 0;
+	  		min-width: 100%; 
+	  		min-height: 100%;
+	  		z-index: -1;
+		}
+
+		#title {
+			border: solid 1px black;
+		}
+
+		.icon {
+			margin-top: 50px;
+			margin-left: 94px;
+			width: 25%;
+			height: 25vh;
+			float: left;
+		}
+
+		p {
+			text-align: center;
+		}
+
+
+		/*Sunglasses*/
+		#sunglasses {
+			fill: #8E1A1A;
+			font-family: 'MyriadPro-Regular';	
+			font-size: 6px;
+			transform-style: preserve-3d;
+		}
+
+		#sunglasses:hover {
+			transform: rotateY(180deg);
+			transition-duration: 5s;
+		}
+	</style>
+
+</head>
+<body>
+	<video autoplay="" loop="" muted="" src="awk_video.mp4">
+       	Your browser does not support embedded video.
+    </video>
+
+     <audio autoplay>
+     	<source src="myvag.ogg" type="audio/ogg">
+    	<source src="myvag.mp3" type="audio/mpeg">
+    	Your browser does not support the audio element.
+    </audio>
+
+	<div id="title">
+		<p> Awkwafina </p>
+	</div>
+
+	<div id="icons">
+		<svg class="icon" id="sunglasses">
+			<use xlink:href="awkwafina.svg#sunglasses"></use>
+		</svg>
+
+		<div class="icon">
+			<p> Icon 2 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 3 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 4 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 5 </p>
+		</div>
+		<div class="icon">
+			<p> Icon 6 </p>
+		</div>
+	</div>		
+</body>
+</html>
